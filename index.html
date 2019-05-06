@@ -24,8 +24,7 @@
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" style="background-color:red" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">RNR Research Services</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +42,13 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
+	  <section id="home-section" class="hero" style="margin-bottom: 240px;">
 		  <div class="home-slider  owl-carousel">
 	      <div class="slider-item ">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img" style="background-image:url(images/bg_1.JPG);">
+	          	<div class="one-third order-md-last img" style="background-image:url(images/bg_1.JPG); background-size: 600px 350px; ">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -70,7 +69,7 @@
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img" style="background-image:url(images/Bg_2.JPG);">
+	          	<div class="one-third order-md-last img" style="background-image:url(images/Bg_2.JPG);  background-size:  600px 350px;">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -91,7 +90,7 @@
           <div class="overlay"></div>
           <div class="container">
             <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third order-md-last img" style="background-image:url(images/Bg_3.JPG);">
+              <div class="one-third order-md-last img" style="background-image:url(images/Bg_3.JPG);  background-size:  600px 350px;">
                 <div class="overlay"></div>
               </div>
               <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -115,7 +114,7 @@
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img" style="background-image:url(images/Bg_4.JPG);">
+	          	<div class="one-third order-md-last img" style="background-image:url(images/Bg_4.JPG); background-size:  600px 350px; ">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -139,7 +138,7 @@
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third order-md-last img" style="background-image:url(images/Bg_5.JPG);">
+	          	<div class="one-third order-md-last img" style="background-image:url(images/Bg_5.JPG); background-size:  600px 350px;">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -379,21 +378,23 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
+            <form action="mailto:director@rnrresearch.co.in" method="post" enctype="text/plain" class="bg-light p-4 p-md-5 contact-form">
+              <div class="form-group" style="visibility:hidden;">
                 <input type="text" class="form-control" placeholder="Your Name">
               </div>
-              <div class="form-group">
+              <div class="form-group" style="visibility:hidden;">
                 <input type="text" class="form-control" placeholder="Your Email">
               </div>
-              <div class="form-group">
+              <div class="form-group" style="visibility:hidden;">
                 <input type="text" class="form-control" placeholder="Subject">
               </div>
-              <div class="form-group">
+              <div class="form-group" style="visibility:hidden;">
                 <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
+		<input type="reset" class="py-3 px-5" style="visibility:hidden">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+		<!--<input type="reset" value="Reset Message" class="btn btn-primary py-3 px-5" style="visibility:hidden;">-->
               </div>
             </form>
 
